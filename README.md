@@ -25,18 +25,3 @@ By analyzing this dataset, we aim to understand the factors contributing to hear
 
 ---
 
-## Data Visualizations
-
-### 1. **Hypertension by Age Group**
-This visualization explores how hypertension varies across different age groups. A **countplot** helps us compare the frequency of individuals with and without hypertension in the youth and adult categories.
-
-![Hypertension by Age Group](heatmap.png)
-
-```python
-plt.figure(figsize=(8, 5))
-sns.countplot(x='Age_Group', hue='Hypertension', data=data, palette='husl')
-plt.title("Hypertension by Age Group")
-plt.xlabel("Age Group")
-plt.ylabel("Count")
-plt.legend(title="Hypertension", labels=["No", "Yes"])
-plt.show()
